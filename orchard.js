@@ -49,10 +49,15 @@ const pinkPrice = .55
     Log `totalAcres` to the console.
 */
 
-// CODE HERE
+var totalAcres = 0
+
+for (let i = 0; i < fujiAcres.length; i++){
+  totalAcres = totalAcres + fujiAcres[i] + galaAcres[i] + pinkAcres[i];
+} console.log("Total Acres: " + totalAcres)
 
 
-
+// I used a loop that will take the value of totalAcres and adds together each value of all 3 orchards, once the cycle is complete i takes the new value of
+//totalAcres and adds the next set of values within all 3 arrays
 
 
 // PROBLEM 2
@@ -67,9 +72,11 @@ const pinkPrice = .55
     Log `averageDailyAcres` to the console.
 */
 
-// CODE HERE
+var averageDailyAcres = totalAcres / 7
+console.log("Average Daily Acres: " + averageDailyAcres)
 
-
+// I created the variable averageDailyAcres and had it equal the total acres i got from above 
+// and divided that by 7 (total number of days in a week) this giving us the average harvested per day 
 
 
 
@@ -105,9 +112,14 @@ const pinkPrice = .55
 let acresLeft = 174 
 let days = 0
 
-// CODE HERE
+for (let i = 0; acresLeft >= 0; i++){
+    days = days + 1;
+    acresLeft = acresLeft - averageDailyAcres;
+  } console.log("Total days to complete: " + days)
 
-
+// I created a lop that would take the amount of acres left to harvest and on each loop it will minus it by the 
+// average acres we calculated about, also adding a value of 1 to the days, this loop will continue its cycle until
+// the value of acresLeft is less then or equal to 0. this will then give us the total number of days/cycles to get 0
 
 // PROBLEM 4
 
@@ -133,14 +145,22 @@ let days = 0
     values to the new arrays.
 */
 
-// CODE HERE
+let fujiTons = []
+let galaTons = []
+let pinkTons = []
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+for (let i = 0; i < 7; i++){
+  fujiTons.push(fujiAcres[i]*6.5)
+  galaTons.push(galaAcres[i]*6.5)
+  pinkTons.push(pinkAcres[i]*6.5)
+} 
+console.log("Fuji tons per day: " +fujiTons)
+console.log("gala tons per day: " +galaTons)
+console.log("pink tons per day: " +pinkTons)
 
 
-
+// I created a loop and on each pass it will take the value of the array and times it by 6.5 and push it to
+// the new varible giving us a new array listing the tons per day.
 
 
 
@@ -160,12 +180,27 @@ let days = 0
     Hint: there are 2000 pounds in a ton.
 */
 
-// CODE HERE 
+let totFujiTons = 0
+let totGalaTons = 0
+let totPinkTons = 0
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+for (let i = 0; i < 7; i++){
+  totFujiTons = totFujiTons + fujiTons[i];
+  totGalaTons = totGalaTons + galaTons[i];
+  totPinkTons = totPinkTons + pinkTons[i];
+}
 
+let fujiPounds = totFujiTons * 2000
+let galaPounds = totGalaTons * 2000
+let pinkPounds = totPinkTons * 2000
+
+console.log("Total Fuji Pounds: "+fujiPounds)
+console.log("Total Gala Pounds: "+galaPounds)
+console.log("Total Pink Pounds: "+pinkPounds)
+
+// I created a loop that on each pass it takes varible tot****Tons and add in a value from the ****Tons array,
+// on each pass it adds in the next value of each array giving us the total. once i have the total in tons i created
+// another varible where it equals the total tons times it by 2000 (Amount of lbs in a ton) giving us the total pounds per orchard.
 
 
 
@@ -187,13 +222,18 @@ let days = 0
     console. 
 */
 
-// CODE HERE
+let fujiProfit = fujiPounds * fujiPrice
+let galaProfit = galaPounds * galaPrice
+let pinkProfit = pinkPounds * pinkPrice
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+console.log("Total Fuji Profit: "+fujiProfit)
+console.log("Total Gala Profit: "+galaProfit)
+console.log("Total Pink Profit: "+pinkProfit)
 
 
+
+// I created a varible that takes the total pounds per orchard and times it by the price per pound for each type
+// giving us the total profit for each orchard
 
 
 
@@ -208,4 +248,8 @@ let days = 0
     Log `totalProfit` to the console.
 */
 
-// CODE HERE
+let totalProfit = fujiProfit + galaProfit + pinkProfit
+
+console.log("Total Profit: "+totalProfit)
+
+// I created a varible totalProfit that adds togethe the total profit from each orchard giving us the overall profit for all 3 orchards

@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-//CODE HERE
+var gitDefinition = "A Terminal to access and modify you Github repository"
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +17,7 @@
     It should be a string containing your best definition of what GitHub is.
 */
 
-//CODE HERE
+var gitHubDefinition = "A cloud bas digital storage & managment for code"
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -25,7 +25,7 @@
     It should be a string containing your best definition of what 'git init' does.
 */
 
-//CODE HERE
+var gitInitDefinition = "A function to create a new repository "
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -33,7 +33,7 @@
     It should be a string containing your best definition of what 'git clone' does.
 */
 
-//CODE HERE
+var gitCloneDefinition = "A funciton to copy the existing repository"
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -41,7 +41,7 @@
     It should be a string containing your best definition of what 'git status' does.
 */
 
-//CODE HERE
+var gitStatusDefinition = "A function that will show you the changes that have been made since the last push"
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -52,7 +52,7 @@
     It should be a string containing the code to add all files.
 */
 
-//CODE HERE
+var gitAddDefinition = "A function that stages all changes, lets it know what to commit"
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -63,7 +63,7 @@
     It should be a string containing the code to commit using the message "initial commit".
 */
 
-//CODE HERE
+var gitCommitDefinition = "A function that saves a copy of all changes that have been made"
 
 
 //////////////////PROBLEM 8////////////////////
@@ -72,4 +72,4 @@
     It should be a string containing your best definition of what 'git push' does.
 */
 
-//CODE HERE
+var gitPushDefinition = "A function that pushes the saved changes to your repsitory"
