@@ -149,11 +149,16 @@ let fujiTons = []
 let galaTons = []
 let pinkTons = []
 
-for (let i = 0; i < 7; i++){
-  fujiTons.push(fujiAcres[i]*6.5)
-  galaTons.push(galaAcres[i]*6.5)
+for (let i = 0; i < fujiAcres.length; i++){
+  fujiTons.push(fujiAcres[i]*6.5)}
+
+for (let i = 0; i < galaAcres.length; i++){
+  galaTons.push(galaAcres[i]*6.5)}
+
+for (let i = 0; i < pinkAcres.length; i++){
   pinkTons.push(pinkAcres[i]*6.5)
 } 
+
 console.log("Fuji tons per day: " +fujiTons)
 console.log("gala tons per day: " +galaTons)
 console.log("pink tons per day: " +pinkTons)
@@ -184,11 +189,14 @@ let totFujiTons = 0
 let totGalaTons = 0
 let totPinkTons = 0
 
-for (let i = 0; i < 7; i++){
-  totFujiTons = totFujiTons + fujiTons[i];
-  totGalaTons = totGalaTons + galaTons[i];
-  totPinkTons = totPinkTons + pinkTons[i];
-}
+for (let i = 0; i < fujiTons.length; i++){
+  totFujiTons = totFujiTons + fujiTons[i];}
+
+for (let i = 0; i < galaTons.length; i++){
+  totGalaTons = totGalaTons + galaTons[i];}
+
+for (let i = 0; i < pinkTons.length; i++){
+  totPinkTons = totPinkTons + pinkTons[i];}
 
 let fujiPounds = totFujiTons * 2000
 let galaPounds = totGalaTons * 2000
