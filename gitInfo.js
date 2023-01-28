@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-var gitDefinition = "A Terminal to access and modify you Github repository"
+var gitDefinition = "A Terminal to access and modify you Github repository";
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +17,7 @@ var gitDefinition = "A Terminal to access and modify you Github repository"
     It should be a string containing your best definition of what GitHub is.
 */
 
-var gitHubDefinition = "A cloud bas digital storage & managment for code"
+var gitHubDefinition = "A cloud bas digital storage & managment for code";
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -25,7 +25,7 @@ var gitHubDefinition = "A cloud bas digital storage & managment for code"
     It should be a string containing your best definition of what 'git init' does.
 */
 
-var gitInitDefinition = "A function to create a new repository "
+var gitInitDefinition = "A function to create a new repository ";
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -33,7 +33,7 @@ var gitInitDefinition = "A function to create a new repository "
     It should be a string containing your best definition of what 'git clone' does.
 */
 
-var gitCloneDefinition = "A funciton to copy the existing repository"
+var gitCloneDefinition = "A funciton to copy the existing repository";
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -41,7 +41,8 @@ var gitCloneDefinition = "A funciton to copy the existing repository"
     It should be a string containing your best definition of what 'git status' does.
 */
 
-var gitStatusDefinition = "A function that will show you the changes that have been made since the last push"
+var gitStatusDefinition =
+  "A function that will show you the changes that have been made since the last push";
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -52,7 +53,8 @@ var gitStatusDefinition = "A function that will show you the changes that have b
     It should be a string containing the code to add all files.
 */
 
-var gitAddDefinition = "A function that stages all changes, lets it know what to commit"
+var gitAddDefinition =
+  "A function that stages all changes, lets it know what to commit";
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -63,8 +65,8 @@ var gitAddDefinition = "A function that stages all changes, lets it know what to
     It should be a string containing the code to commit using the message "initial commit".
 */
 
-var gitCommitDefinition = "A function that saves a copy of all changes that have been made"
-
+var gitCommitDefinition =
+  "A function that saves a copy of all changes that have been made";
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -72,4 +74,5 @@ var gitCommitDefinition = "A function that saves a copy of all changes that have
     It should be a string containing your best definition of what 'git push' does.
 */
 
-var gitPushDefinition = "A function that pushes the saved changes to your repsitory"
+var gitPushDefinition =
+  "A function that pushes the saved changes to your repsitory";
