@@ -6,7 +6,7 @@ var myName = "Daniel";
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
-var faveNum = "7";
+var faveNum = 7;
 
 //////////////////PROBLEM 3////////////////////
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
